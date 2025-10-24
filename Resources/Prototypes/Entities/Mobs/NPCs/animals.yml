@@ -4134,8 +4134,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Critical
-      60: Dead
+      50: Critical # Trauma
+      100: Dead # Trauma
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 4.5
@@ -4163,6 +4163,17 @@
     reformTime: 10
     popupText: diona-reform-attempt
     reformPrototype: MobDionaReformed
+  - type: Clothing # Trauma start
+    quickEquip: false
+    sprite: Mobs/Animals/nymph.rsi
+    equippedPrefix: nimf
+    slots:
+    - HEAD
+  - type: Appearance
+  - type: Item
+    size: Normal
+    sprite: Mobs/Animals/nymph.rsi
+    heldPrefix: nimf # Trauma end
   - type: LanguageKnowledge # Einstein Engines - Language
     speaks:
     - RootSpeak
